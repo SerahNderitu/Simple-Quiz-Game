@@ -1,0 +1,106 @@
+        <style>
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: cursive;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 50vh;
+                margin: 0;
+                overflow: hidden;
+                
+            }
+            h1 {
+                padding-top: 10rem;
+            }
+            
+            .quiz-section {
+                background-color: antiquewhite;
+                border-radius: 10px;
+                box-shadow: 0 8px 8px -4px lightblue;
+                width: 700px;
+            }
+            .quiz-header {
+                padding: 0 0.2rem;
+                margin: 1em auto;
+            }
+            h2 {
+                padding: 0 1rem;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+            }
+            ul li {
+                font-size: 1.1rem;
+                margin: 1rem 0;
+            }
+            ul li label {
+                cursor: pointer;
+            }
+            .submit {
+                border: none;
+                background-color: skyblue;
+                font-family: inherit;
+                font-weight: bold;
+                font-size: 1.5rem;
+                width: 100%;
+                display: block;
+                border-radius: 5px;
+                padding: 1rem;
+                cursor: pointer;
+            }
+            #submit:focus {
+                outline: none;
+                background-color: burlywood;
+            }
+            
+
+            input[type='radio'] {
+                display: none;
+            }
+
+            input[type='radio'] + label {
+                position: relative;
+                padding-left: 1.8rem;
+                cursor: pointer;
+            }
+
+            input[type='radio'] + label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: 1px solid #ddd;
+                width: 1.1rem;
+                height: 1.1rem;
+                border-radius: 100%;
+                background-color: #D9DDDC;
+            }
+
+            input[type='radio']:checked + label:after {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 0.75rem;
+                height: 0.75rem;
+                background-color: black;
+                border-radius: 100%;
+                transition: all 0.2s ease;
+            }
+
+            input[type='radio']:not(:checked) + label:after {
+                opacity: 0;
+            }
+
+            input[type='radio']:checked + label:after {
+                opacity: 1;
+            }
+        </style>
