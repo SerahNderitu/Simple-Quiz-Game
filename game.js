@@ -1,5 +1,5 @@
- <script>
-                // an array of question with choices
+ <script type="text/javascript">
+                // an array of questions with choices
             
             const quizDetail = [
                 {
